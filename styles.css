@@ -13,9 +13,9 @@
   margin-bottom: 40px;
   margin-left: auto;
   padding-top: 30px;
-  padding-right: : auto;
+  padding-right: : 0px;
   padding-bottom: 30px;
-  padding-left: auto; 
+  padding-left: 0px; 
   box-shadow: 0px 0px 40px rgba(0,0,0,0.3);
 }
 
@@ -90,4 +90,12 @@
 
 hr{
   color: black;
+}
+
+#image {
+  position: relative;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
