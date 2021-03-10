@@ -1,93 +1,170 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Brothers Strugatsky tribute page</title>
-		<link rel="stylesheet" type="text/css" href="./styles.css">
-		<link rel="shortcut icon" href="./favicon.png" type="image/png">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<div class="main">
-			<div class="title">
-				<h1 class="name">
-					The brothers Arkady Strugatsky and Boris Strugatsky		
-				</h1>
-				<p id="title-caption">People that changed the World</p>	
-			</div>
-			
-			<div class="img-div">
-				<img id="image" src="./strugatsky-main1.jpg" alt="photo of brothers Strugatsky"></img>
-				<p class="img-caption">Arkady Natanovich Strugatsky and Boris Natanovich Strugatsky together</p>
-			</div>
-			<div id="tribute-info">
-				<div class="lifestyle">
-					<h2 class="lifestyle-title">Life and work</h2>
-					<hr>
-					<p class="lifestyle-text">
-						The Strugatsky brothers were born to Natan Strugatsky, an art critic, and his wife, a teacher. Their father was Jewish and their mother was Russian Orthodox. Their early work was influenced by Ivan Yefremov and Stanisław Lem. Later they went on to develop their own, unique style of science fiction writing that emerged from the period of Soviet rationalism in Soviet literature and evolved into novels interpreted as works of social criticism.
-						<br> <br>
-						Their best-known novel, Piknik na obochine, has been translated into English as Roadside Picnic. Andrei Tarkovsky adapted the novel for the screen as Stalker (1979).
-						<br> <br>
-						Algis Budrys compared their "An Emergency Case" and Arkady's "Wanderers and Travellers" to that of Eando Binder. Several other of their fiction works were translated into English, German, French, and Italian, but did not receive the same magnitude of critical acclaim as that granted by their Russian audiences. The Strugatsky brothers, however, were and still are popular in many countries, including Hungary, Poland, Bulgaria, the former republics of Yugoslavia, and Germany, where most of their works were available in both East and West Germany. They are well-known Russian science fiction writers with a well-developed fan base.
-						<br> <br>
-						The Strugatsky brothers were Guests of Honour at Conspiracy '87, the 1987 World Science Fiction Convention, held in Brighton, England.
-						<br> <br>
-						In 1991, Text Publishers brought out the collected works by Arkady and Boris Strugatsky.
-					</p>
+<html lang="en">
 
-				</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/index_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/favicons/rocket-16-190970.png">
+    <title>Survey form</title>
+</head>
 
-				<div class="works-title">
-					<h2 class="works-title">Works</h2>
-					<hr>
-					<p>Here's a time line of Brothers Strygatsky work:</p>
-					<div class="book-chronos-list">
-						<ul>
-							<li>1958 - From Beyond</li>
-							<li>1959 - The Land of Crimson Clouds</li>
-							<li>1960 - The Way to Amalthea</li>
-							<li>1962 - Noon: 22nd Century</li>
-							<li>1962 - Space Apprentice</li>
-							<li>1962 - Escape Attempt</li>
-							<li>1963 - Far Rainbow</li>
-							<li>1964 - Hard to Be a God</li>
-							<li>1965 - Monday Begins on Saturday</li>
-							<li>1965 - The Final Circle of Paradise</li>
-							<li>1966 - Snail on the Slope</li>
-							<li>1967 - The Second Invasion from Mars</li>
-							<li>1968 - Tale of the Troika</li>
-							<li>1969 - Prisoners of Power</li>
-							<li>1970 - Dead Mountaineer's Hotel</li>
-							<li>1971 - Space Mowgli</li>
-							<li>1972 - Ugly Swans</li>
-							<li>1972 - Roadside Picnic</li>
-							<li>1974 - The Kid from Hell</li>
-							<li>1977 - Definitely Maybe</li>
-							<li>1980 - Tale of Friendship and Non-friendship</li>
-							<li>1980 - Beetle in the Anthill</li>
-							<li>1986 - Lame Fate</li>
-							<li>1986 - The Time Wanderers</li>
-							<li>1988 - Overburdened with Evil</li>
-							<li>1989 - The Doomed City</li>
-							<li>1990 (written 1965) - Disquiet</li>
-						</ul>
-					</div>
-					<p id ="work-quote">
-						<q class="quote">A dead end is a great excuse to break down the wall</q> - excerpt from the novel "The Distant Rainbow"
-					</p>
-				</div>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">
+                Survey form
+            </h1>
+            <p class="header__subtitle">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </header>
+        <main class="main">
+            <form action="./thanks.html" class="survey">
 
-				<div class="more-info">
-					<p>
-						<strong class="offer-info"> <a id="tribute-link" href="https://russiapedia.rt.com/prominent-russians/literature/arkady-and-boris-strugatsky/" target="_blank" title="Click on paragraph to see more.">If you have time, you should read more about these incredible human beings on this site</a>.
-						</strong>
-					</p>
-				</div>
+                <div class="survey-group">
+                    <label class="survey-group__asktitle" for="name">
+                        Name
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="survey-group__answer"
+                        required>
+                </div>
+                <div class="survey-group">
+                    <label class="survey-group__asktitle" for="email">
+                        Email
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email"
+                        class="survey-group__answer" required>
+                </div>
+                <div class="survey-group">
+                    <label class="survey-group__asktitle" for="age">
+                        Age
+                    </label>
+                    <input type="number" name="age" min="1" max="120" id="age" placeholder="Enter your age"
+                        class="survey-group__answer" required>
+                </div>
+                <div class="survey-group">
+                    <label class="survey-group__asktitle" for="role">
+                        Which option best describes your current role?
+                    </label>
+                    <select name="role" id="role" class="survey-group__select" required>
+                        <option value="" disabled selected>
+                            Select your current role
+                        </option>
+                        <option value="student">
+                            Student
+                        </option>
+                        <option value="fulltimejob">
+                            Full-time Job
+                        </option>
+                        <option value="fulltimelearner">
+                            Full-time Learner
+                        </option>
+                        <option value="prefernototsay">
+                            Prefer not to say
+                        </option>
+                        <option value="other">
+                            Other
+                        </option>
+                    </select>
+                </div>
+                <div class="survey-group">
+                    <p class="survey-group__asktitle">
+                        Would you recommend freeCodeCamp to a friend?
+                    </p>
+                    <label for="definitely" class="survey-group__label">
+                        <input class="survey-group__radio" id="definitely" type="radio" name="recommend" checked>
+                        Definitely
+                    </label>
+                    <label for="maybe" class="survey-group__label">
+                        <input id="maybe" class="survey-group__radio" type="radio" name="recommend">
+                        Maybe
+                    </label>
+                    <label for="notsure" class="survey-group__label">
+                        <input id="notsure" class="survey-group__radio" type="radio" name="recommend">
+                        Not Sure
+                    </label>
+                </div>
+                <div class="survey-group">
+                    <label class="survey-group__asktitle" for="feature">
+                        What is your favorite feature of freeCodeCamp?
+                    </label>
+                    <select name="feature" id="feature" class="survey-group__select" required>
+                        <option value="" disabled selected>
+                            Select favorite feature
+                        </option>
 
-			</div>
+                        <option value="community">
+                            Community
+                        </option>
+                        <option value="chalanges">
+                            Chalanges
+                        </option>
+                        <option value="opensource">
+                            Open Source
+                        </option>
 
-		</div>
-	
-	</body>
+                        <option value="other">
+                            Other
+                        </option>
+                    </select>
+                </div>
+                <div class="survey-group">
+                    <p class="survey-group__asktitle">
+                        What would you like to see improved? (Check all that apply)
+                    </p>
+                    <label for="frontend" class="survey-group__label"><input id="frontend" type="checkbox" name="soon"
+                            value="frontend">
+                        Front-end
+                    </label>
+                    <label for="backend" class="survey-group__label"><input id="backend" type="checkbox" name="soon"
+                            value="backend">
+                        Back-end
+                    </label>
+                    <label for="dataviz" class="survey-group__label"><input id="dataviz" type="checkbox" name="soon"
+                            value="dataviz">
+                        Data Visualization
+                    </label>
+                    <label for="chalanges" class="survey-group__label"><input id="chalanges" type="checkbox" name="soon"
+                            value="chalanges">
+                        Challenges
+                    </label>
+                    <label for="opensource" class="survey-group__label"><input id="opensource" type="checkbox"
+                            name="soon" value="opensource">
+                        Open Source Community
+                    </label>
+                    <label for="gitterhelprooms" class="survey-group__label"><input id="gitterhelprooms" type="checkbox"
+                            name="soon" value="gitterhelprooms">
+                        Gitter help rooms
+                    </label>
+                    <label for="videos" class="survey-group__label"><input id="videos" type="checkbox" name="soon"
+                            value="videos">
+                        Videos
+                    </label>
+                    <label for="meetups" class="survey-group__label"><input id="meetups" type="checkbox" name="soon"
+                            value="meetups">
+                        City Meetups
+                    </label>
+
+                </div>
+                <div class="survey-group">
+                    <p class="survey-group__asktitle">
+                        Any comments or suggestions?
+                    </p>
+                    <textarea name="comments" id="comments" cols="1" rows="6" class="survey-group__textarea"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="survey-group">
+                    <button type="submit" class="survey__submitbtn">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
 </html>
