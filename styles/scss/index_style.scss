@@ -14,23 +14,22 @@ $rf: 18;
 
 
 html {
-    font-size: 16px;
-
-    @media (max-width: 1200px) {
+    font-size: 15px;
+    
+    @media (max-width: 1300px) {
         font-size: 10px; 
 
     }
-    @media (max-width: 1366px) {
+    @media (max-width: 1370px) {
       font-size: 11px;  
     }
     @media (max-width: 1450px) {
       font-size: 13px;  
     }
     @media (max-width: 1610px) {
-      font-size: 16px;  
+      font-size: 14px;  
     }
-
-
+    
     
 }
 
