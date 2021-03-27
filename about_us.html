@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css/about_us_style.css">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Выездные школы МММФ</title>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo">
+                <p class="logo__title">ЛОГО</p>
+            </div>
+            <p class="header__tel">
+                8 800 123 45 67
+            </p>
+        </header>
+        <main class="main">
+            <aside class="sidebar">
+                <nav class="navbar">
+                    <a href="index.html" class="navbar__link">
+                        Выездные школы
+                    </a>
+                    <a href="" class="navbar__link">
+                        Онлайн
+                    </a>
+                    <a href="" class="navbar__link">
+                        Очные занятия
+                    </a>
+                    <a href="" class="navbar__link">
+                        Турниры / Олимпиады
+                    </a>
+                    <a href="" class="navbar__link">
+                        О нас
+                    </a>
+                </nav>
+
+                <p class="sidebar__copyrights">
+                    Copyright © “Выездные школы МММФ”, 2018-2020
+                </p>
+            </aside>
+            <section class="content">
+                <p class="content__title">МММФ – это онлайн и оффлайн школа,<br> 
+                    выездные лагеря и олимпиадные физика и математика</p>
+                <p class="content__subtitle">наши преподаватели</p>
+                <div class="buttons-container">
+                    <button class="buttons-container__button button_clicked" id="btn-1"><p class="button-text">Руководители смен</p></button>
+                    <button class="buttons-container__button" id="btn-2"><p class="button-text">Преподаватели математики</p></button>
+                    <button class="buttons-container__button" id="btn-3"><p class="button-text">Преподаватели физики</p></button>
+                    <button class="buttons-container__button" id="btn-4"><p class="button-text">Преподаватели химии</p></button>
+                </div>
+                <div class="teachers">
+                    <!--<div class="teacher-profile">
+                        <h3 class="teacher-profile__title">
+                            Коробицын<br>Дмитрий<br>Александрович
+                        </h3>
+                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor1.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+                        <p class="teacher-profile__subtitle">
+                            Руководитель выездных школ МММФ<br><br>
+                            Преподаватель Центра педагогического мастерства г. Москвы.
+                        </p>
+                    </div>
+                    <div class="teacher-profile">
+                        <h3 class="teacher-profile__title">
+                            Засыпкина<br>Ирина<br>Сергеевна
+                        </h3>
+                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor2.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+                        <p class="teacher-profile__subtitle">
+                            Руководитель программ для начальной школы<br><br>Автор олимпиадной онлайн Школы «Math tiger MSU
+                        </p>
+                    </div>
+                    <div class="teacher-profile">
+                        <h3 class="teacher-profile__title">
+                            Носков<br>Михаил<br>Сергеевич
+                        </h3>
+                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor3.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+                        <p class="teacher-profile__subtitle">
+                            Руководитель лингвистических смен<br><br>Руководитель курсов по школьной математике
+                        </p>
+                    </div>
+                    <div class="teacher-profile">
+                        <h3 class="teacher-profile__title">
+                            Захаров<br>Роман<br>Викторович
+                        </h3>
+                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor4.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+                        <p class="teacher-profile__subtitle">
+                            Руководитель физических смен<br><br>Золотой медалист Международной олимпиады по физике в составе сборной России<br><br>Преподаватель физики Школы № 1329 г. Москвы
+                        </p>
+                    </div>
+                    <div class="teacher-profile">
+                        <h3 class="teacher-profile__title">
+                            Шестаков<br>Иван<br>Валерьевич
+                        </h3>
+                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor5.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+                        <p class="teacher-profile__subtitle">
+                            Выпускник химфака МГУ<br><br>
+                            Преподаватель химии Центра педагогического мастерства г.Москвы
+                        </p>
+                    </div>
+                    <div class="teacher-profile">
+                        <h3 class="teacher-profile__title">
+                            Кульгин<br>Юрий<br>Владимирович
+                        </h3>
+                        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor6.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+                        <p class="teacher-profile__subtitle">
+                            Выпускник ФМ-класса Школы № 1329<br><br>
+                            Администратор по связям с общественностью
+                        </p>
+                    </div>-->
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+<script src="js/about_us.js"></script>
+
+</html>
+
+
+<!--                    
+<div class="teacher-profile">
+        <h3 class="teacher-profile__title">
+            Захаров<br>Роман<br>Викторович
+        </h3>
+        <div class="teacher-profile__img" style="background: url('../../img/about_us_jpg/tutor4.jpg'); background-repeat: no-repeat; background-size: cover;"></div>
+        <p class="teacher-profile__subtitle">
+            Руководитель физических смен<br><br>
+            Золотой медалист Международной олимпиады по физике в составе сборной России<br><br>
+            Преподаватель физики Школы № 1329 г. Москвы
+        </p>
+</div>
+-->
