@@ -89,10 +89,7 @@ body {
     grid-template-columns: 19rem 1fr;
     grid-template-rows: 1fr;
     grid-gap: 46/$rf *1rem;
-    @media (max-width: 770px) {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-    }
+
     
 }
 .sidebar {
@@ -100,9 +97,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media (max-width: 770px) {
-        display: none;
-    }
+    
         &__copyrights {
             margin: 0px;
             font-size: 12/$rf*1rem;
@@ -140,10 +135,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    margin-right: 145/$rf *1rem;
-    @media (max-width: 770px) {
-        margin-right: 0;
-    }
+    
     &__title{
         text-transform: uppercase;
         font-weight: 900;
@@ -184,6 +176,7 @@ body {
         border-radius: 40/$rf *1rem;
         color: #6B95FF;
         background-color: transparent;
+        margin-bottom: 15/$rf*1rem;
     }
     &__button:hover{
         color: white;
@@ -193,6 +186,105 @@ body {
     &__button:focus{
         outline: none;
     }
+}
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-column {
+    height: 96/$rf*1rem;
+    border-radius: 10/$rf*1rem;
+    border-style: solid;
+    border-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25/$rf*1rem;
+    padding-right: 89/$rf*1rem;
+    &__white-line{
+        background-color: #fff;
+        width: 2px;
+        height: 64/$rf*1rem;
+    }
+    &__gray-line{
+        background-color: #D7E2FF;
+        width: 2px;
+        height: 64/$rf*1rem;
+    }
+}
+.list-column-white{
+    background-color: #fff;
+}
+.list-column-gray{
+    background-color: #D7E2FF;
+
+}
+.price-description {
+    width: 308/$rf*1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+		&__title {
+            padding: 0rem;
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 18/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+        }
+		&__subtitle {
+            padding: 0rem;
+            margin: 0rem;
+            margin-top: 5/$rf*1rem;
+            font-family: Montserrat;
+            font-size: 14/$rf*1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+
+		}
+}
+
+.cost {
+    width: 140/$rf*1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+		&__title {
+            padding: 0rem;
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 26/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32/$rf*1rem;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-bottom: 8/$rf*1rem;
+
+		}
+
+		&__subtitle {
+
+            padding: 0rem;
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 14/$rf*1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17/$rf*1rem;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
 }
 
 .button_clicked{
@@ -240,9 +332,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: (54/$rf)*1rem;
-        @media (max-width: 770px) {
-            grid-template-columns: 1fr;
-        }
+        
     }
     &__left-side{
         display: flex;
@@ -474,14 +564,6 @@ body {
         
 }
 
-@media (max-width: 1200px) {
-   .content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: (21/$rf)*1rem;
-    }     
-    
-}
 
 .umosfera{
     display: flex;
@@ -666,5 +748,21 @@ body {
         display: flex;
         flex-direction: column;
 
+    }
+    .tiger{
+    display: flex;
+    flex-direction: column;
+        &__upper-content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .list-column {
+        padding-left: 10/$rf*1rem;
+        padding-right: 10/$rf*1rem;
+    }
+    
+    .price-description {
+        width: 200/$rf*1rem;
     }
 }
