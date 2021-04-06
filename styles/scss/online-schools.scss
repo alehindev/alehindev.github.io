@@ -1,0 +1,349 @@
+$rf: 18;
+
+
+
+
+html {
+    font-size: 16px;
+
+    @media (max-width: 320px) {
+        font-size: 10px;
+    }
+    
+    @media (max-width: 1200) {
+        font-size: 10px;
+    }
+
+    @media (max-width: 1300px) {
+        font-size: 11px; 
+
+    }
+    @media (max-width: 1370px) {
+      font-size: 12px;  
+    }
+    @media (max-width: 1450px) {
+      font-size: 13px;  
+    }
+    @media (max-width: 1610px) {
+      font-size: 15px;  
+    }
+
+
+    
+}
+
+body {
+    margin: 0px; //внешний отступ
+    padding: 0px;
+    
+
+}
+
+
+.page {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2.9rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-bottom: 2rem;
+    @media (max-width: 1000px) {
+        padding-top: 30/$rf*1rem;
+        padding-left: 25/$rf*1rem;
+        padding-right: 25/$rf*1rem;
+        padding-bottom: 30/$rf*1rem;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		&__tel {
+            font-size: 2.22rem;
+            font-weight: 400;
+            line-height: 2.76rem;
+            color: black;
+            margin: 0px;
+        }
+}
+.logo {
+    border: ((3/$rf)* 1rem) solid #6B95FF;
+    border-radius: ((20/$rf)*1rem);
+    width: ((270/$rf)*1rem);
+    height: ((70/$rf)*1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    &__title{
+        padding: 0px;
+        margin: 0px;
+        font-size: 26/$rf * 1rem;
+        font-weight: 500;
+        line-height: 31.69/$rf *1rem;
+    }
+
+}
+.main {
+    margin: 0px;
+    padding: 0px;
+    margin-top: (46.8/$rf) * 1rem;
+    display: grid;
+    grid-template-columns: 19rem 1fr;
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr;
+    }
+    grid-template-rows: 1fr;
+    grid-gap: 46/$rf *1rem;
+    
+}
+.sidebar {
+    
+    height: 860/$rf *1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+		&__copyrights {
+            margin: 0px;
+            font-size: 12/$rf*1rem;
+            font-weight: 500;
+		}
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+		&__link {
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-weight: 800;
+            padding-bottom: (40/$rf)*1rem;
+            outline: none;
+            position: relative;
+		}
+        &__link:hover:before {
+            content: '';
+            position: absolute;
+            left: -35%;
+            top: 15%;
+            width: 5.5rem;
+            height: 3px;
+            background-color: #6B95FF;
+		}
+        
+        
+        &__link-clicked {
+            color: #6B95FF;
+        }
+}
+
+
+//from here
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-nav {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 60/$rf *1rem;
+}
+
+.nav-btn {
+    transition: all 0.2s ease;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 25/$rf *1rem;
+    margin-bottom: 15/$rf*1rem;
+    @media (max-width: 1200px) {
+        margin-bottom: 15/$rf*1rem;
+    }
+    width: auto;
+    height: auto;
+    padding-left: 33/$rf *1rem;
+    padding-right: 33/$rf *1rem;
+    padding-top: 19/$rf *1rem;
+    padding-bottom: 19/$rf *1rem;
+    border: 3/$rf *1rem solid #6B95FF;
+    border-radius: 40/$rf *1rem;
+    color: #6B95FF;
+    background-color: transparent;
+    &__text{
+        font-family: Montserrat;
+        font-size: 18/$rf * 1rem;
+        line-height: 22/$rf *1rem;
+        font-weight: 700;
+        margin: 0rem;
+    }
+}
+.nav-btn:hover{
+    color: white;
+    background-color: #6B95FF;
+    cursor: pointer;
+}
+.nav-btn:focus{
+        outline: none;
+}
+.nav-btn_clicked{
+    color: white;
+    background-color: #6B95FF;
+    &:hover{
+        cursor: auto;
+    }
+}
+
+
+//before article do the buttons`
+
+.article {
+    padding: 0rem;
+    margin: 0rem;
+		&__title {
+            padding: 0rem;
+            margin: 0rem;
+            font-family: Montserrat;
+            font-size: 40/$rf*1rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 49/$rf*1rem;
+            letter-spacing: 0rem;
+            //text-align: left;
+            margin-bottom: 39/$rf *1rem;
+            text-transform: uppercase;
+		}
+
+        &__paragraph {
+            display: flex;
+            //padding-right: 300px;
+            margin-right: 685/$rf*1rem;
+            
+            //height: 685/$rf*1rem;
+            //weight: 686/$rf*1rem; 
+            font-family: Montserrat;
+            font-size: 18/$rf*1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22/$rf*1rem;
+            letter-spacing: 0rem;
+            text-align: left;
+		}
+
+        &__img {
+
+            float: right;
+            margin: 0rem;
+            height: 406/$rf*1rem;
+            width: 580/$rf*1rem;
+            border-color: transparent;
+            border-width: 0px;
+            border-radius: (20/$rf)*1rem;
+	        position: relative;
+            margin-bottom: 60/$rf*1rem;
+		}
+
+        &__img:before {
+            content: "";       
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url("../../img/online__schools/img1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: (20/$rf)*1rem;
+            z-index: -2;
+        }
+
+        &__img::after {
+	        content: "";
+	        width: 100%;
+            height: 100%;    
+	        position: absolute;
+	        top: 0;    
+	        left: 0;   
+            background:#99B6FF;
+            mix-blend-mode: multiply;
+            border-radius: (20/$rf)*1rem;
+            z-index: -1;   
+        }
+}
+        
+
+
+.article-about {
+    display: block;
+    text-decoration: none;
+    margin-top: 50/$rf*1rem;
+    &__text {
+            
+            margin-top: 10/$rf*1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: 500;
+            font-size: 26/$rf *1rem;
+            text-decoration: none;
+            color: black;
+            height: 32/$rf *1rem;
+		}
+}
+
+
+.arrow {
+    position: relative;
+    height: 16/$rf *1rem;
+    width: 51/$rf *1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 20/$rf*1rem;
+        &__body {
+            position: absolute;
+            left: 0;
+            height: 2/$rf*1rem;
+            width: 50/$rf*1rem;
+            background-color: black ;
+		}
+        
+        &__side::after {
+            content: '';
+            position: absolute;
+            width: 2/$rf*1rem;
+            height: 9/$rf*1rem;
+            bottom: 1/$rf*1rem;
+            right: 0;
+            background-color: black;
+            transform: rotate(45deg);
+            border-radius: 5/$rf*1rem;
+            z-index: 10;
+        }
+        &__side::before {
+            content: '';
+            position: absolute;
+            width: 2/$rf*1rem;
+            height: 9/$rf*1rem;
+            top: 1/$rf*1rem;
+            right: 0;
+            background-color: black;
+            transform: rotate(-45deg);
+            border-radius: 5/$rf*1rem;
+            z-index: 10;
+        }
+
+		&__side {
+            position: absolute;
+            width: 8/$rf*1rem;
+            height: 16/$rf*1rem;
+            right: 2/$rf*1rem;
+            top: 0;
+            z-index: 10;
+		}
+    }
+
