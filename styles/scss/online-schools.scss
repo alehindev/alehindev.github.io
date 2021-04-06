@@ -2,41 +2,39 @@ $rf: 18;
 
 
 
-
 html {
-    font-size: 16px;
-    @media (max-width: 360px) {
-        font-size: 9px;
+    font-size: 12px;
+    @media screen and (min-width: 1px) and (max-width: 359px) {
+        font-size: 12px;
+    }   
+    @media screen and (min-width: 360px) and (max-width: 450px) {
+        font-size: 13px;
     }
-    @media (max-width: 450px) {
+    @media screen and (min-width: 451px) and (max-width: 599px) {
         font-size: 14px;
     }
-    @media (max-width: 600px) {
-        font-size: 16px;
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        font-size: 15px;
     }
-    @media (max-width: 767px) {
-        font-size: 18px;
+    @media screen and (min-width: 768px) and (max-width: 1040px) {
+        font-size: 11px;
     }
-    @media (max-width: 1023px) {
-        font-size: 14px;
-    }
-    @media (max-width: 1200px) {
+    @media screen and (min-width: 1023px) and (max-width: 1300px) {
         font-size: 12px;
     }
-    @media (max-width: 1400px) {
+    @media screen and (min-width: 1301px) and (max-width: 1400px) {
+        font-size: 13px;
+    }
+    @media screen and (min-width: 1401px) and (max-width: 1600px) {
         font-size: 14px;
     }
-    @media (max-width: 1600px) {
-        font-size: 16px;
-    }
-    @media (max-width: 1920px) {
+    @media screen and (min-width: 1601px) and (max-width: 1921px)  {
         font-size: 17px;
     }
-    @media (max-width: 2560px) {
-        font-size: 19px;
+    @media screen and (min-width: 1922px) and (max-width: 2560px) {
+        font-size: 21px;
     }
 }
-
 
 body {
     margin: 0px; //внешний отступ
@@ -99,9 +97,6 @@ body {
     margin-top: (46.8/$rf) * 1rem;
     display: grid;
     grid-template-columns: 19rem 1fr;
-    @media (max-width: 1000px) {
-        grid-template-columns: 1fr;
-    }
     grid-template-rows: 1fr;
     grid-gap: 46/$rf *1rem;
     
@@ -117,9 +112,7 @@ body {
             font-size: 12/$rf*1rem;
             font-weight: 500;
 		}
-    @media (max-width: 1000px) {
-        display: none;
-    }
+    
 }
 .navbar {
     display: flex;
@@ -172,9 +165,7 @@ body {
     vertical-align: middle;
     margin-right: 25/$rf *1rem;
     margin-bottom: 15/$rf*1rem;
-    @media (max-width: 1200px) {
-        margin-bottom: 15/$rf*1rem;
-    }
+    
     width: auto;
     height: auto;
     padding-left: 33/$rf *1rem;
@@ -224,18 +215,13 @@ body {
             font-weight: 900;
             line-height: 49/$rf*1rem;
             letter-spacing: 0rem;
-            //text-align: left;
-            margin-bottom: 39/$rf *1rem;
             text-transform: uppercase;
+            margin-bottom: 60/$rf*1rem;
 		}
 
         &__paragraph {
-            display: flex;
-            //padding-right: 300px;
-            margin-right: 685/$rf*1rem;
-            
-            //height: 685/$rf*1rem;
-            //weight: 686/$rf*1rem; 
+            padding: 0rem;
+            margin: 0rem;
             font-family: Montserrat;
             font-size: 18/$rf*1rem;
             font-style: normal;
@@ -246,16 +232,13 @@ body {
 		}
 
         &__img {
-
-            float: right;
-            margin: 0rem;
+            position: relative;
             height: 406/$rf*1rem;
-            width: 580/$rf*1rem;
             border-color: transparent;
             border-width: 0px;
             border-radius: (20/$rf)*1rem;
-	        position: relative;
-            margin-bottom: 60/$rf*1rem;
+	        margin: 0rem;
+            
 		}
 
         &__img:before {
@@ -285,7 +268,11 @@ body {
             z-index: -1;   
         }
 }
-        
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50/$rf*1rem;
+}
 
 
 .article-about {
@@ -496,4 +483,18 @@ body {
         flex-direction: column;
 
     }
+    .article-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .article {
+        &__paragraph {
+            order: 2;
+		}
+
+        &__img {
+            order: 1;
+		}
+    }
+
 }
