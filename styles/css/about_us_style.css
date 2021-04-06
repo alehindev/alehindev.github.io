@@ -10,27 +10,63 @@ html {
   font-size: 16px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 360px) {
   html {
-    font-size: 11px;
+    font-size: 9px;
   }
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
   html {
     font-size: 12px;
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1400px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 1610px) {
+@media (max-width: 1600px) {
   html {
-    font-size: 15px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 19px;
   }
 }
 
@@ -65,6 +101,10 @@ body {
   line-height: 2.76rem;
   color: black;
   margin: 0px;
+}
+
+.header__burger {
+  display: none;
 }
 
 .logo {
@@ -328,5 +368,156 @@ body {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     grid-gap: 1.16667rem;
+  }
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .page {
+    padding: 1.66667rem 1.38889rem;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    z-index: 101;
+  }
+  .header__tel {
+    position: absolute;
+    top: -700%;
+    left: 0;
+    z-index: -1;
+    font-size: 1.38889rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.72222rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .header__tel.active {
+    top: 200%;
+    z-index: 10;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 26.5px;
+    z-index: 20;
+  }
+  .header__burger span {
+    position: absolute;
+    left: 0;
+    top: 11.34px;
+    width: 34px;
+    height: 4px;
+    background-color: #6B95FF;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+  }
+  .header__burger::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 34px;
+    height: 4px;
+    background-color: #6B95FF;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+  }
+  .header__burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 34px;
+    height: 4px;
+    background-color: #6B95FF;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+  }
+  .header__burger.active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .header__burger.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 11px;
+  }
+  .header__burger.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 11px;
+  }
+  .logo {
+    z-index: 101;
+    width: 5.72222rem;
+    height: 2.05556rem;
+    border-radius: 1.11111rem;
+  }
+  .logo__title {
+    font-size: 0.77778rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.94444rem;
+    letter-spacing: 0rem;
+    text-align: left;
+  }
+  .sidebar {
+    z-index: -1;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#99B6FF));
+    background: linear-gradient(180deg, #FFFFFF 0%, #99B6FF 100%);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .sidebar__copyrights {
+    margin: 0rem 1.38889rem 1.66667rem 1.38889rem;
+  }
+  .sidebar.active {
+    z-index: 10;
+    top: 0%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .navbar {
+    margin: 10.16667rem 1.38889rem 0rem 1.38889rem;
+  }
+  .navbar__link {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.22222rem;
+    letter-spacing: 0rem;
+    text-align: left;
+  }
+  .main {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 2.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

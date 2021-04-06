@@ -1,5 +1,10 @@
 "use strict";
-
+$(document).ready(function () {
+    $('.header__burger').click(function (event) {
+        $('.header__burger, .sidebar, .header__tel').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
 
 if ($("#btn-winter-school").hasClass("nav-btn_clicked") || $("#btn-summer-school").hasClass("nav-btn_clicked") || $("#btn-spring-school").hasClass("nav-btn_clicked") == false) {
     ShowDefault();

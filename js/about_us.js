@@ -92,6 +92,7 @@ var tutorsAbout = ["Руководитель выездных школ МММФ|
     "Старший преподаватель кафедры физики СУНЦ НГУ|Руководитель команд Новосибирска на Всероссийских и международных олимпиадах по физике|Член жюри IEPHO",
     "Преподаватель-методист по химии, учитель высшей категории|Преподаватель химии в Российско-Британской школе «Алгоритм»"];
 
+
 ShowHeadTutors();
 
 $("#btn-1").click(function () {
@@ -165,3 +166,9 @@ function ShowChemTutors() {
     $(".teachers").append(newTmp);
 }
 //alert(elementChildrens.length);
+$(document).ready(function () {
+    $('.header__burger').click(function (event) {
+        $('.header__burger, .sidebar, .header__tel').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
