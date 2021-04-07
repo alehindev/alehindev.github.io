@@ -248,7 +248,7 @@ body {
             background-color: #fff;
             transform: rotate(45deg);
             border-radius: 5/$rf*1rem;
-            z-index: 10;
+            z-index: 6;
         }
         &__side::before {
             content: '';
@@ -260,7 +260,7 @@ body {
             background-color: #fff;
             transform: rotate(-45deg);
             border-radius: 5/$rf*1rem;
-            z-index: 10;
+            z-index: 6;
         }
 
 		&__side {
@@ -269,7 +269,7 @@ body {
             height: 16/$rf*1rem;
             right: 2/$rf*1rem;
             top: 0;
-            z-index: 10;
+            z-index: 6;
 		}
         
 }

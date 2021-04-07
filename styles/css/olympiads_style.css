@@ -709,9 +709,6 @@ body {
   line-height: 1.76111rem;
   color: black;
   text-decoration: underline;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
-  text-decoration-skip-ink: none;
 }
 
 .arrow {
@@ -812,7 +809,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../../img/olympiads_jpg/umosfera.png");
+  background-image: url("./../../img/olympiads_jpg/umosfera.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,7 +1,4 @@
-var tutorsProfileTemplate = '<div class="teacher-profile">' +
-    '<h3 class="teacher-profile__title">|</h3><div class="teacher-profile__img" style="background: url(\'./../img/about_us_jpg/||\'); background-repeat: no-repeat; background-size: cover;"></div>' +
-    '<p class="teacher-profile__subtitle">|||</p></div>';
-
+var tutorsProfileTemplate = '<div class="teacher-profile">' + '<div class="teacher-bio">' + '<h3 class="teacher-bio__name">|</h3><div div class="teacher-logo" style = "background: url(\'./../img/about_us_jpg/||\'); background-repeat: no-repeat; background-size: cover; background-position: center;" ></div>' + '</div >' + '<p class="teacher-profile__subtitle">|||</p></div >';
 var tutorsNames = ["Коробицын Дмитрий Александрович",
     "Засыпкина Ирина Сергеевна",
     "Носков Михаил Сергеевич",

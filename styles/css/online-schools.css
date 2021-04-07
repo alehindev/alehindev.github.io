@@ -347,7 +347,8 @@ body {
 
 .article-about {
   display: block;
-  text-decoration: none;
+  text-decoration: underline;
+  color: black;
   margin-top: 2.77778rem;
 }
 

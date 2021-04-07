@@ -168,39 +168,46 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20/$rf*1rem;
 }
-
-.teacher-profile{
-    padding: 35/$rf*1rem 80/$rf*1rem;
+.teacher-profile {
     position: relative;
+    padding: 40/$rf*1rem 20/$rf*1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 450/$rf *1rem;
-    &__title{
-        position: relative;
-        
-        font-size: 30/$rf *1rem;
-        font-weight: 700;
-        line-height: 37/$rf *1rem;
-    }
-    &__img{
-        position: absolute;
-        border-radius: 50%;
-        width: 265/$rf * 1rem;
-        height: 265/$rf * 1rem;
-        top:  31/$rf * 1rem;
-        right: 36/$rf *1rem;
-    }
-    &__subtitle{
-        position: relative;
-        
+
+    
+    &__subtitle {
+        padding: 0rem;
+        margin: 0rem;
+        margin-top: 10/$rf*1rem;
         font-weight: 500;
         font-size: 18/$rf *1rem;
         line-height: 22/$rf *1rem;
         overflow-wrap: break-word;
-    } 
-    
+    }
 }
+.teacher-bio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+		&__name {
+            font-size: 30/$rf *1rem;
+            font-weight: 700;
+            line-height: 37/$rf *1rem;
+		}
+}
+.teacher-logo {
+    z-index: 5;
+    width: 256/$rf*1rem;
+    height: 256/$rf*1rem;
+    border-radius: 50%;
+}
+
+
+
 
 .teacher-profile::before{
     content: "";
@@ -431,36 +438,16 @@ body {
 
     }
     .teachers{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20/$rf*1rem;  
     }
+    .teacher-logo {
+        z-index: 5;
+        width: 150/$rf*1rem;
+        height: 150/$rf*1rem;
     
-        .teacher-profile{
-            padding: 40/$rf*1rem 14/$rf*1rem;
-            &__title{
-                position: relative;
-                font-size: 20/$rf *1rem;
-                font-weight: 700;
-                line-height: 37/$rf *1rem;
-            }
-            &__img{
-                position: absolute;
-                border-radius: 50%;
-                width: 265/$rf * 1rem*(3/4);
-                height: 265/$rf * 1rem*(3/4);
-                top:  31/$rf * 1rem;
-                right: 36/$rf *1rem;
-            }
-            &__subtitle{
-                position: relative;
-                
-                font-weight: 500;
-                font-size: 18/$rf *1rem;
-                line-height: 22/$rf *1rem;
-                overflow-wrap: break-word;
-            } 
-        
     }
+
 
 }

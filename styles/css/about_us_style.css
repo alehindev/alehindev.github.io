@@ -227,8 +227,8 @@ body {
 }
 
 .teacher-profile {
-  padding: 1.94444rem 4.44444rem;
   position: relative;
+  padding: 2.22222rem 1.11111rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,31 +239,48 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-height: 25rem;
 }
 
-.teacher-profile__title {
-  position: relative;
+.teacher-profile__subtitle {
+  padding: 0rem;
+  margin: 0rem;
+  margin-top: 0.55556rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.22222rem;
+  overflow-wrap: break-word;
+}
+
+.teacher-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.teacher-bio__name {
   font-size: 1.66667rem;
   font-weight: 700;
   line-height: 2.05556rem;
 }
 
-.teacher-profile__img {
-  position: absolute;
+.teacher-logo {
+  z-index: 5;
+  width: 14.22222rem;
+  height: 14.22222rem;
   border-radius: 50%;
-  width: 14.72222rem;
-  height: 14.72222rem;
-  top: 1.72222rem;
-  right: 2rem;
-}
-
-.teacher-profile__subtitle {
-  position: relative;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.22222rem;
-  overflow-wrap: break-word;
 }
 
 .teacher-profile::before {
@@ -515,38 +532,15 @@ body {
             flex-direction: column;
   }
   .teachers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1.11111rem;
   }
-  .teacher-profile {
-    padding: 2.22222rem 0.77778rem;
-  }
-  .teacher-profile__title {
-    position: relative;
-    font-size: 1.11111rem;
-    font-weight: 700;
-    line-height: 2.05556rem;
-  }
-  .teacher-profile__img {
-    position: absolute;
-    border-radius: 50%;
-    width: 11.04167rem;
-    height: 11.04167rem;
-    top: 1.72222rem;
-    right: 2rem;
-  }
-  .teacher-profile__subtitle {
-    position: relative;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.22222rem;
-    overflow-wrap: break-word;
+  .teacher-logo {
+    z-index: 5;
+    width: 8.33333rem;
+    height: 8.33333rem;
   }
 }

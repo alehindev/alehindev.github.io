@@ -277,10 +277,11 @@ body {
 
 .article-about {
     display: block;
-    text-decoration: none;
+    text-decoration: underline;
+    color: black;
     margin-top: 50/$rf*1rem;
     &__text {
-            
+
             margin-top: 10/$rf*1rem;
             display: flex;
             flex-direction: row;

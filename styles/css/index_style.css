@@ -329,7 +329,7 @@ body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   border-radius: 0.27778rem;
-  z-index: 10;
+  z-index: 6;
 }
 
 .arrow__side::before {
@@ -343,7 +343,7 @@ body {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   border-radius: 0.27778rem;
-  z-index: 10;
+  z-index: 6;
 }
 
 .arrow__side {
@@ -352,7 +352,7 @@ body {
   height: 0.88889rem;
   right: 0.11111rem;
   top: 0;
-  z-index: 10;
+  z-index: 6;
 }
 
 .article-box-2 {

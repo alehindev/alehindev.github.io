@@ -508,8 +508,6 @@ body {
         line-height: 31.7/$rf *1rem;
         color: black;
         text-decoration: underline;
-        text-decoration-style: solid;
-        text-decoration-skip-ink: none;
     }
 }
 
@@ -595,7 +593,7 @@ body {
             position: absolute;
             top: 0;
             left: 0;
-            background-image: url("../../img/olympiads_jpg/umosfera.png");
+            background-image: url('./../../img/olympiads_jpg/umosfera.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
