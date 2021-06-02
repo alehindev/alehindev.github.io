@@ -227,7 +227,7 @@ body {
 
 .intro-img {
   width: 100%;
-  background-image: url("./../../img/doc-pen.jpg");
+  background-image: url("./../../img/doc-pen.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -270,11 +270,15 @@ body {
 }
 
 .answer-img {
-  background-image: url("./../../img/slider1.jpg");
+  background-image: url("./../../img/slider1.png");
 }
 
 .journal-img {
   background-image: url("./../../img/Mask-Group.png");
+}
+
+.web-cycle {
+  background-image: url("./../../img/web-cycle.png");
 }
 
 .slider {
