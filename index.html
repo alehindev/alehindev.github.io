@@ -5,123 +5,327 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles/css/index_style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Выездные школы МММФ</title>
+    <!-- ChiefSlider CSS -->
+    <link rel="stylesheet" href="./styles/css/chief-slider.min.css">
+    <!-- ChiefSlider JavaScript -->
+    <script defer src="./js/chief-slider.js"></script>
+    <link href="//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <script src="./js/slider.js"></script>
+    <title>hnoco</title>
 </head>
 
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="logo">
-                <p class="logo__title">ЛОГО</p>
+    <header class="header">
+        <div class="contacts">
+            <div class="tel">
+                <img src="./img/028-telephone-2.png" alt="telephone img" class="tel__img">
+                <div class="tel__number">
+                    +7 (926) 645 23 98
+                </div>
             </div>
-            <p class="header__tel">
-                8 800 123 45 67
-            </p>
-            <div class="header__burger">
-                <span></span>
+            <div class="mail">
+                <img src="./img/025-arroba.png" alt="mail img" class="mail__img">
+                <div class="mail__number">
+                    info@hnonco.ru
+                </div>
             </div>
-        </header>
-        <main class="main">
-            <aside class="sidebar">
-                <nav class="navbar">
-                    <a href="./pages/traveling-schools.html" class="navbar__link">
-                        Выездные школы
-                    </a>
-                    <a href="./pages/online-schools.html" class="navbar__link">
-                        Онлайн
-                    </a>
-                    <a href="./offline_lessons.html" class="navbar__link">
-                        Очные занятия
-                    </a>
-                    <a href="./pages/olympiads.html" class="navbar__link">
-                        Турниры / Олимпиады
-                    </a>
-                    <a href="./pages/about_us.html" class="navbar__link">
-                        О нас
-                    </a>
-                </nav>
+        </div>
+        <a href="#" class="account-link">
+            <button class="bnt-link">Личный кабинет</button>
 
-                <p class="sidebar__copyrights">
-                    Copyright © “Выездные школы МММФ”, 2018-2020
+        </a>
+    </header>
+    <nav class="navigation">
+        <img src="./img/logo.png" alt="logo" class="navigation__logo">
+
+        <a href="#" class="navigation__link clicked">Главная</a>
+        <a href="#" class="navigation__link">Членство</a>
+        <a href="#" class="navigation__link">Мероприятия</a>
+        <a href="#" class="navigation__link">Пациенту</a>
+        <a href="#" class="navigation__link">Специалисту</a>
+        <a href="#" class="navigation__link">Вебинары</a>
+        <a href="#" class="navigation__link">Новости</a>
+        <a href="#" class="navigation__link">Статьи</a>
+    </nav>
+    <section class="content">
+        <div class="content-intro">
+            <div class="intro-img"> </div>
+            <div class="intro-offer">
+                <h3 class="intro-offer__title">
+                    ВСТУПИТЬ В ОБЩЕСТВО
+                </h3>
+                <p class="intro-offer__subtitle">
+                    Членство в обществе<br>
+                    дает широкие возможности специалистам,<br>
+                    которые занимаются лечением<br>
+                    опухолей головы и шеи<br>
                 </p>
+                <button class="intro-offer__btn">
+                    <p class="intro-offer__btn-text">ВСТУПИТЬ</p>
+
+                </button>
+            </div>
+
+        </div>
+        <div class="content-main">
+            <div class="content-group">
+                <section class="news">
+                    <h3 class="news__title">
+                        Новости
+                    </h3>
+                    <div class="blocks">
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="video">
+                    <h3 class="video__title">
+                        АКТУАЛЬНЫЕ<br>
+                        ВИДЕОМАТЕРИАЛЫ
+                    </h3>
+                    <iframe class="video__iframe" width="560" height="315"
+                        src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </section>
+                <section class="articles">
+                    <h3 class="articles__title">
+                        СТАТЬИ ДЛЯ СПЕЦИАЛИСТОВ
+                    </h3>
+                    <div class="blocks">
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                        <div class="block">
+                            <img src="./img/news.png" alt="news-photo" class="block__img">
+                            <p class="block__data">
+                                01 января 2021 года
+                            </p>
+                            <h5 class="block__title">
+                                ПРОВЕДЕНА УНИКАЛЬНАЯ ОПЕРАЦИЯ
+                            </h5>
+                            <p class="block__subtitle">
+                                Очень редкую и невероятно сложную операцию провели российские специалисты в
+                                онкологическом центре имени Блохина
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="line">
+            </div>
+            <aside class="content-group">
+                <h5 class="content-group__title">
+                    СТРАНИЦЫ КОМПАНИЙ ПАРТНЕРОВ
+                </h5>
+
+                <div class="partners-video">
+                    <h6 class="partners-video__text">
+                        ВИДЕОМАТЕРИАЛЫ ПАРТНЕРОВ
+                    </h6>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title">
+                            merck
+                        </h6>
+                        <iframe class="partner-video__iframe" width="560" height="315"
+                            src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title">
+                            merck
+                        </h6>
+                        <iframe class="partner-video__iframe" width="560" height="315"
+                            src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title">
+                            merck
+                        </h6>
+                        <iframe class="partner-video__iframe" width="560" height="315"
+                            src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title">
+                            merck
+                        </h6>
+                        <iframe class="partner-video__iframe" width="560" height="315"
+                            src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title">
+                            merck
+                        </h6>
+                        <iframe class="partner-video__iframe" width="560" height="315"
+                            src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="partner-video">
+                        <h6 class="partner-video__title">
+                            merck
+                        </h6>
+                        <iframe class="partner-video__iframe" width="560" height="315"
+                            src="https://www.youtube.com/embed/0UIRRcX-kuA" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="partners-text">
+
+                </div>
             </aside>
-            <section class="content">
-                <div class="article-box article-box-1">
-                    <h2 class="article-box__title">
-                        Майская<br>школа<br>2021
-                    </h2>
-                    <article class="article-box-item">
-                        <a href="#" class="article-about about-bottompos">
-                            <div class="article-about__text">
-                                Подробнее
-
-                                <div class="arrow">
-                                    <div class="arrow__body">
-                                    </div>
-                                    <div class="arrow__side">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                <div class="article-box article-box-2">
-
-                    <h2 class="article-box__title">
-                        выездные<br>школы мммф
-                    </h2>
-                    <article class="article-box-item">
-                        <h3 class="article-box-item__title">
-                            28.03.21
-                        </h3>
-                        <p class="article-box-item__subtitle">
-                            Набор в 5 и 6 математический класс Лицея «Воробьёвы горы» на 2021-22 уч.г.
-                        </p>
-                        <a href="#" class="article-about">
-                            <div class="article-about__text">
-                                Подробнее
-
-                                <div class="arrow">
-                                    <div class="arrow__body">
-                                    </div>
-                                    <div class="arrow__side">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="article-box-item">
-                        <h3 class="article-box-item__title">
-                            28.06.21
-                        </h3>
-                        <p class="article-box-item__subtitle">
-                            Каникулярный интенсив в Этномире
-                        </p>
-                        <a href="#" class="article-about">
-                            <div class="article-about__text">
-                                Подробнее
-
-                                <div class="arrow">
-                                    <div class="arrow__body">
-                                    </div>
-                                    <div class="arrow__side">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            </section>
-        </main>
-
-    </div>
-    <script src="./js/index.js"></script>
+        </div>
+    </section>
+    <footer class="footer"></footer>
 </body>
 
 </html>
