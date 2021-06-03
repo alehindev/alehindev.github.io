@@ -12,7 +12,7 @@ function addClassNameListener(elemId) {
             }
             lastClassName = className;
         }
-    }, 10);
+    }, 100);
 }
 
 addClassNameListener(1);
@@ -21,7 +21,5 @@ addClassNameListener(3);
 addClassNameListener(4);
 function fadeIn(elem) {
     let info = elem.querySelector(".intro-offer");
-    console.log(info);
     info.classList.add("act");
-    console.log(info);
 }
