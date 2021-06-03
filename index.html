@@ -8,10 +8,13 @@
     <!-- ChiefSlider CSS -->
     <link rel="stylesheet" href="./styles/css/chief-slider.min.css">
     <!-- ChiefSlider JavaScript -->
+    <link rel="stylesheet" href="./styles/css/animate.css">
     <script defer src="./js/chief-slider.js"></script>
     <link href="./fonts/myriad/stylesheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./styles/css/main.css">
     <script src="./js/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>hnonco - alehindev</title>
 </head>
 
@@ -62,7 +65,7 @@
                 <div class="slider__container">
                     <div class="slider__wrapper">
                         <div class="slider__items">
-                            <div class="slider__item">
+                            <div class="slider__item" id="1">
                                 <div class="content-intro">
                                     <div class="intro-img"> </div>
                                     <div class="intro-offer">
@@ -84,7 +87,7 @@
 
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="slider__item" id="2">
                                 <div class="content-intro">
                                     <div class="intro-img answer-img"> </div>
                                     <div class="intro-offer">
@@ -104,7 +107,7 @@
 
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="slider__item" id="3">
                                 <div class="content-intro">
                                     <div class="intro-img journal-img"> </div>
                                     <div class="intro-offer">
@@ -126,7 +129,7 @@
 
                                 </div>
                             </div>
-                            <div class="slider__item">
+                            <div class="slider__item" id="4">
                                 <div class="content-intro">
                                     <div class="intro-img  web-cycle"> </div>
                                     <div class="intro-offer">
@@ -260,7 +263,7 @@
                         СТАТЬИ ДЛЯ СПЕЦИАЛИСТОВ
                     </h3>
                     <div class="blocks">
-                        <div class="block">
+                        <div class="block fadeInLeft">
                             <img src="./img/news.png" alt="news-photo" class="block__img">
                             <p class="block__data">
                                 01 января 2021 года
@@ -464,6 +467,11 @@
     </section>
     <footer class="footer"></footer>
 </body>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src="./js/box-filter.js"></script>
+<script src="./js/fadeIn.js"></script>
 
 </html>

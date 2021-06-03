@@ -217,6 +217,7 @@ body {
 }
 
 .content-intro {
+  background-color: #253f78;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 65% 1fr;
@@ -231,6 +232,44 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+
+.act {
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
 }
 
 .intro-offer {
