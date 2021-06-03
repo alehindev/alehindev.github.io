@@ -12,8 +12,14 @@
     <link href="./fonts/myriad/stylesheet.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./styles/css/main.css">
     <script src="./js/slider.js"></script>
-    <title>hnoco</title>
+    <title>hnonco - alehindev</title>
 </head>
+
+<!--
+    author: alehindev
+    telegram: alehindev
+    email: alehindev@gmail.com
+-->
 
 <body>
     <header class="header">
@@ -39,7 +45,7 @@
     <nav class="navigation">
         <img src="./img/logo.png" alt="logo" class="navigation__logo">
 
-        <a href="#" class="navigation__link clicked">Главная</a>
+        <a href="#" class="navigation__link clicked-link">Главная</a>
         <a href="#" class="navigation__link">Годовой отчёт</a>
         <a href="#" class="navigation__link">Мероприятия</a>
         <a href="#" class="navigation__link">Пациенту</a>
@@ -406,8 +412,58 @@
                 </div>
             </aside>
         </div>
+        <div class="catalog">
+            <div class="catalog-info">
+                <div class="info-nav">
+                    <button class="info-nav__btn" datafilter="main">
+                        <p>ГЛАВНАЯ</p>
+                    </button>
+                    <button class="info-nav__btn clicked" datafilter="report2020">
+                        <p>ОТЧЁТ 2020</p>
+                    </button>
+                    <button class="info-nav__btn" datafilter="events">
+                        <p>МЕРОПРИЯТИЯ</p>
+                    </button>
+                    <button class="info-nav__btn" datafilter="patient">
+                        <p>ПАЦИЕНТУ</p>
+                    </button>
+                    <button class="info-nav__btn" datafilter="for-u">
+                        <p>СПЕЦИАЛИСТУ</p>
+                    </button>
+                    <button class="info-nav__btn" datafilter="news">
+                        <p>НОВОСТИ</p>
+                    </button>
+                    <button class="info-nav__btn" datafilter="about-us">
+                        <p>О НАС</p>
+                    </button>
+                    <button class="info-nav__btn" datafilter="contacts">
+                        <p>КОНТАКТЫ</p>
+                    </button>
+                </div>
+                <div class="info-line"></div>
+                <div class="info-objects">
+                    <div class="info-object" datacategory="report2020">
+                        <h6 class="info-object__title">СТРАТЕГИЧЕСКИЕ ПАРТНЕРЫ ОБЩЕСТВА</h6>
+                        <a href="https://www.merck.com/" class="info-object__link" target="_blank">MERCK</a>
+                        <a href="https://www.msd.ru/home/" class="info-object__link" target="_blank">MSD</a>
+                        <a href="https://www.bms.com/" class="info-object__link" target="_blank">Bristol Myers
+                            Squibb</a>
+                        <h6 class="info-object__title">КОМПАНИИ-ПАРТНЕРЫ ОБЩЕСТВА</h6>
+                        <a href="#" class="info-object__link">Микросан Озон</a>
+                    </div>
+                    <div class="info-object" datacategory="main">
+                        <h6 class="info-object__title">ГЛАВНАЯ</h6>
+                    </div>
+                    <div class="info-object" datacategory="about-us">
+                        <h6 class="info-object__title">О НАС</h6>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/catalog.png" alt="catalog png" class="catalog__img">
+        </div>
     </section>
     <footer class="footer"></footer>
 </body>
+<script src="./js/box-filter.js"></script>
 
 </html>

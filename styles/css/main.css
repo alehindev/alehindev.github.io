@@ -212,7 +212,7 @@ body {
   font-size: 1.28rem;
 }
 
-.clicked {
+.clicked-link {
   color: #253f78;
 }
 
@@ -424,6 +424,7 @@ body {
 
 .articles {
   margin-top: 3.55556rem;
+  margin-bottom: 5.33333rem;
 }
 
 .articles__title {
@@ -490,12 +491,188 @@ body {
 .footer {
   width: 100%;
   background-color: #253f78;
-  margin-top: 5.55556rem;
   height: 6.22222rem;
 }
 
 .group-left {
   max-width: 68.26667rem;
+}
+
+.catalog {
+  margin: 0rem;
+  margin-top: 5.33333rem;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 1fr;
+      grid-template-columns: 65% 1fr;
+  height: 27.73333rem;
+  width: 100%;
+  background-color: #dae6e8;
+}
+
+.catalog__img {
+  height: 27.73333rem;
+  width: 100%;
+}
+
+.catalog-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 2.48889rem;
+  height: 86%;
+}
+
+.info-nav__btn {
+  position: relative;
+  background-color: transparent;
+  border-width: 0px;
+  margin: 0rem;
+  padding: 0rem;
+  margin: 0.88889rem 0rem;
+  width: 14.22222rem;
+  height: 1.06667rem;
+  z-index: 2;
+  outline: none;
+}
+
+.info-nav__btn p {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 1.06667rem;
+  font-weight: bold;
+  color: #253f78;
+}
+
+.info-nav__btn:hover p {
+  font-size: 1.42222rem;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info-nav__btn:hover::after {
+  content: '';
+  position: absolute;
+  right: -2.5rem;
+  bottom: 0.22222rem;
+  width: 0;
+  height: 0;
+  border-top: 0.24889rem solid transparent;
+  border-right: 0.49778rem solid #253f78;
+  border-bottom: 0.24889rem solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.clicked p {
+  font-size: 1.42222rem;
+}
+
+.clicked::after {
+  content: '';
+  position: absolute;
+  right: -2.5rem;
+  bottom: 0.22222rem;
+  width: 0;
+  height: 0;
+  border-top: 0.24889rem solid transparent;
+  border-right: 0.49778rem solid #253f78;
+  border-bottom: 0.24889rem solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.info-line {
+  width: 1px;
+  height: 86%;
+  background-color: #253f78;
+}
+
+.info-objects {
+  height: 86%;
+  width: 500px;
+}
+
+.info-object {
+  margin: 0rem;
+  margin-left: 2.48889rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info-object__title {
+  margin: 0rem;
+  font-size: 1.42222rem;
+  font-weight: bold;
+  color: #253f78;
+  margin: 0.71111rem 0rem;
+}
+
+.info-object__link {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.42222rem;
+  margin: 0.71111rem 0rem;
+  color: #253f78;
+  width: 17.77778rem;
+  height: 2.48889rem;
+}
+
+.info-object__link:hover {
+  color: #00887c;
+  font-size: 1.95556rem;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info-object__link:hover::before {
+  content: '';
+  position: absolute;
+  right: 19.83333rem;
+  bottom: 1.11111rem;
+  width: 0;
+  height: 0;
+  border-top: 0.24889rem solid transparent;
+  border-left: 0.49778rem solid #253f78;
+  border-bottom: 0.24889rem solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 .about-partners {
@@ -529,6 +706,9 @@ body {
 }
 
 @media screen and (min-width: 1px) and (max-width: 767px) {
+  .catalog {
+    display: none;
+  }
   .content-intro {
     display: none;
   }
