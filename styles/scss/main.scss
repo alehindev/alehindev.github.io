@@ -251,7 +251,8 @@ body {
 			position: absolute;
 			bottom: 0.64*106/$rf*1rem;
 			height: 0.64*100/$rf*1rem;
-			width: 0.64*480/$rf*1rem;
+			min-width: 0.64*460/$rf*1rem;
+
 			outline: none;
 			background-color: white;
 			border-width: 0px;
@@ -259,6 +260,7 @@ body {
 		}
 		&__btn-text{
 			margin: 0rem;
+			margin: 0rem 10/$rf*1rem;
 			font-size: 0.64*36/$rf;
 			font-weight: bold;
 			color:#253f78;
@@ -535,6 +537,9 @@ body {
 			border-bottom:  0.64*7/$rf*1rem solid transparent;
   			transition: 0.3s;
 			transition-timing-function: ease;
+		}
+		&__link {
+			text-decoration: none;
 		}
 		
 }

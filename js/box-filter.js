@@ -38,17 +38,17 @@ function BoxFilter() {
         item.classList.add("clicked");
 
 
-
-
-        for (let i = 0; i < box_filter__items.length; i++) {
-            if (box_filter__items[i].getAttribute("datacategory") === filter_value) {
-                new_array.push(box_filter__items[i]);
-            }
-        }
-        console.table(new_array);
-        console.log(filtred_items);
-        update_list(new_array, filtred_items);
-
+        /*
+        
+                for (let i = 0; i < box_filter__items.length; i++) {
+                    if (box_filter__items[i].getAttribute("datacategory") === filter_value) {
+                        new_array.push(box_filter__items[i]);
+                    }
+                }
+                console.table(new_array);
+                console.log(filtred_items);
+                update_list(new_array, filtred_items);
+        */
     });
 
     function update_list(items, array) {
@@ -69,5 +69,5 @@ function BoxFilter() {
 
 }
 
-
 BoxFilter();
+document.querySelectorAll(".info-nav__btn")[1].click();
