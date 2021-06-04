@@ -591,7 +591,7 @@ body {
   margin: 0rem;
   padding: 0rem;
   margin: 0.88889rem 0rem;
-  width: 14.22222rem;
+  width: 16rem;
   height: 1.06667rem;
   z-index: 2;
   outline: none;
@@ -695,12 +695,27 @@ body {
 }
 
 .info-object__link:hover {
-  color: #00887c;
   font-size: 1.95556rem;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.info-object__link:nth-child(2):hover {
+  color: #2dbfce;
+}
+
+.info-object__link:nth-child(3):hover {
+  color: #587c3d;
+}
+
+.info-object__link:nth-child(4):hover {
+  color: #b41fc1;
+}
+
+.info-object__link:nth-child(6):hover {
+  color: #0061f3;
 }
 
 .info-object__link:hover::before {

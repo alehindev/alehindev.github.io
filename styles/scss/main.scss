@@ -507,7 +507,7 @@ body {
 			margin: 0rem;
 			padding: 0rem;
 			margin: 0.64*25/$rf*1rem 0rem;
-			width: 0.64*400/$rf*1rem;
+			width: 0.64*450/$rf*1rem;
 			height: 0.64*30/$rf*1rem;
 			z-index: 2;
 			outline: none;
@@ -593,11 +593,26 @@ body {
 			height: 0.64*70/$rf*1rem;
 		}
 		&__link:hover {
-			color: #00887c;
 			font-size: 0.64*55/$rf*1rem;
 			transition-timing-function: ease;
   			transition: 0.3s;
 		}
+		&__link:nth-child(2):hover{
+			color: #2dbfce;
+		}
+		&__link:nth-child(3):hover{
+		
+	color: #587c3d;
+}
+		&__link:nth-child(4):hover{
+		color: #b41fc1;
+}
+
+		&__link:nth-child(6):hover{
+			color: #0061f3;
+
+}
+
 		&__link:hover::before{
 			content: '';
 			position: absolute;

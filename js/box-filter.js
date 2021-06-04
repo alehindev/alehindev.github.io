@@ -65,9 +65,9 @@ function BoxFilter() {
     }
 
 
-    box_filter_nav.querySelector('.info-nav__btn').click();
+    //  box_filter_nav.querySelector('.info-nav__btn').click();
 
 }
 
 BoxFilter();
-document.querySelectorAll(".info-nav__btn")[1].click();
+//document.querySelectorAll(".info-nav__btn")[1].click();
