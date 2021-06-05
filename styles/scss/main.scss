@@ -199,6 +199,7 @@ body {
             
         }
 		&__btn{
+
 			color: white;
 			background-color: transparent;
 			outline: none;
@@ -208,6 +209,8 @@ body {
 			margin: 1rem 0rem;
 			padding: 0rem;
 			font-size: 0.64*36/$rf*1rem;
+			margin-left: 5rem;
+			
 		}
 }
 .clicked-link {
@@ -265,11 +268,14 @@ body {
 			display: none;
 		}
 		&__title {
+			
 			margin: 0rem;
 			color: white;
 			font-weight: bold;
 			font-size: 1.3rem;
 			margin: 1rem 0rem;
+			margin-left: 5rem;
+			
 		}
 }
 
@@ -792,16 +798,19 @@ body {
 			justify-content: space-around;
 			flex-direction: column;
 			align-items: flex-start;
-			padding-left: 5rem;
 			padding-top: 2rem;
 			padding-bottom: 1rem;
 			background-color: #253f78;
 			&__logo {
+				margin-left: 5rem;
 				height: 0.64*100/$rf*1rem;
 				margin-top: 10px;
 			}
 
-			&__link {margin: 20/$rf*1rem 0rem;
+			&__link {
+				margin: 20/$rf*1rem 0rem;
+				
+				margin-left: 5rem;
 				text-transform: capitalize;
 				text-decoration: none;
 				color: white;

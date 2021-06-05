@@ -282,6 +282,7 @@ body {
   margin: 1rem 0rem;
   padding: 0rem;
   font-size: 1.28rem;
+  margin-left: 5rem;
 }
 
 .clicked-link {
@@ -343,6 +344,7 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
   margin: 1rem 0rem;
+  margin-left: 5rem;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -936,17 +938,18 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 5rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
     background-color: #253f78;
   }
   .navigation__logo {
+    margin-left: 5rem;
     height: 3.55556rem;
     margin-top: 10px;
   }
   .navigation__link {
     margin: 1.11111rem 0rem;
+    margin-left: 5rem;
     text-transform: capitalize;
     text-decoration: none;
     color: white;
