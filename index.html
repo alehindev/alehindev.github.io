@@ -49,14 +49,25 @@
         <img src="./img/logo.png" alt="logo" class="navigation__logo">
 
         <a href="#" class="navigation__link clicked-link">Главная</a>
-        <a href="#" class="navigation__link">Годовой отчёт</a>
+        <a href="#" class="navigation__link">Годовой отчёт 2020</a>
         <a href="#" class="navigation__link">Мероприятия</a>
-        <a href="#" class="navigation__link">Пациенту</a>
-        <a href="#" class="navigation__link">Специалисту</a>
-        <a href="#" class="navigation__link">Вебинары</a>
+        <a href="#" class="navigation__link link-delete">Пациенту</a>
+        <a href="#" class="navigation__link link-delete">Специалисту</a>
+        <a href="#" class="navigation__link link-delete">Вебинары</a>
+
+        <button class="navigation__btn link-add" id="nav__btn">Партнёры</button>
+        <div class="navigation__container-links navigation__container-unactive">
+            <h6 class="navigation__title">Страницы компаний партнёров</h6>
+            <a href="#" class="navigation__link">Merck</a>
+            <a href="#" class="navigation__link">MSD</a>
+            <a href="#" class="navigation__link">Brystol</a>
+            <a href="#" class="navigation__link">Микросан Озон</a>
+            <h6 class="navigation__title">Видеоматериалы компаний партнёров</h6>
+        </div>
         <a href="#" class="navigation__link">Новости</a>
         <a href="#" class="navigation__link">Статьи</a>
         <a href="#" class="navigation__link">Членство</a>
+
     </nav>
 
     <section class="content">
@@ -461,6 +472,7 @@
     </section>
     <footer class="footer"></footer>
 </body>
+<script src="./js/navigation-container.js"></script>
 <script src="./js/wow.min.js"></script>
 <script>
     new WOW().init();
