@@ -283,6 +283,12 @@ body {
   padding: 0rem;
   font-size: 1.28rem;
   margin-left: 5rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .clicked-link {
